@@ -1,6 +1,6 @@
-# CEO Command Centre
+# Business Development Dashboard
 
-The EPROM CEO Command Centre (company map + corporate dashboard), opened from eTaske
+The EPROM Business Development Dashboard (company map + corporate dashboard), opened from eTaske
 (Insights → Command Centre).
 
 **This repo holds no figures.** The page signs in with an eTaske account and reads the
@@ -9,7 +9,7 @@ approved Managers and Admins can read (see `firestore.rules` in the eTaske repo)
 refresh script uploads new figures there; nothing here needs changing when they change.
 
 - `index.html` — the shell: sign-in, top bar, the sealed frame.
-- `app.js` — Firebase sign-in, loading, watermark.
+- `app.js` — Firebase sign-in, loading.
 - `cc.js` — rebuilds the page from the stored chunks (copy of eTaske `src/lib/commandCentre.ts`, keep in step).
 
 Local test against the Firebase emulators: serve this folder and open `http://localhost:<port>/?emu=1`.
